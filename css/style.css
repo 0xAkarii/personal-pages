@@ -116,7 +116,12 @@ body {
     text-decoration: none;
     background-color: var(--main);
     border: 2px solid var(--secondary);
-    border-radius: 5px 5px;
+    border-radius: 6px 6px;
+}
+
+.hero .row .left-main .ex-link {
+    height: 1.2rem;
+    width: auto;
 }
 
 .hero .row .left-main a:hover{

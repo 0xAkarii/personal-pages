@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Alva Radian</title>
+    <title>Website - Alva Radian</title>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Fonts Google -->
@@ -21,7 +23,7 @@
         <div class="navbar-nav">
             <a class="nav-links" href="#home">Home</a>
             <a class="nav-links" href="#about">About</a>
-            <a class="nav-links" href="#testimonials">Testimonial</a>
+            <a class="nav-links" href="#testimonials">Portfolio</a>
             <a class="nav-links" href="#contact">Contact</a>
         </div>
         <div class="navbar-extra">
@@ -33,8 +35,9 @@
     <!-- Hero HSection Start -->
     <section class="hero" id="home">
         <div class="row">
-            <main class="left-main">Hi, my name is <span>Alva Radian</span> <div>and I am a <span id="element"></span></div>
-            <a target="_blank" href="#" class="download-btn">Download CV</a>
+            <main class="left-main" data-aos="fade-down" data-aos-duration="1000">Hi, my name is <span>Alva Radian</span> <div>and I am a <span id="element"></span></div>
+            <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" target="_blank" href="#" class="download-btn">Download CV</a>
+            <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" target="_blank" href="https://rdnzx.medium.com" class="blog-btn">Visit Blog <i class="ex-link" data-feather="external-link"></i></a>
             </main>
             <main class="right-main">
                 <img src="img/img.png" alt="Web Developer">
@@ -45,17 +48,11 @@
 
     <!-- About Section Start-->
     <section class="about" id="about">
-        <h2>About Me</h2>
+        <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">About Me</h2>
         <div class="row">
             <div class="about-img">
                 <img src="img/profile.jpg" alt=Profile">
             </div>
-            <!-- <div class="about-content">
-                <p>Hi, my name is Alva Radian, you can call me Alva or Radian. I love computers since I was a kid. I started learning about cybersecurity in 2019. I learned about penetration testing especially on a website application, and from 2019 - the present I was doing bug bounty and some project penetration testing on website applications. </p>
-                <p>I’m not a professional penetration tester as you think. There are still more that I have to learn about cybersecurity especially penetration testing on Android, iOS, and other application. I love other tech stuff too like programming, networking, etc.</p>
-                <p>My hobbies are listening to music, I like hip-hop music. Sometimes I playing a game, my favorite game is FPS game such as Valorant, Apex Legends, etc. Also I like watching movies and anime. My favorite genre are mystery, action, psychological, romance :D</p>
-                <p>You can find me on the home page, there are links to my social account and also you can contact me by email and let’s be friend :D</p>
-            </div> -->
             <div class="about-content">
                 <p>Currently pursuing a Bachelor’s degree in Informatics Engineering at Mandiri University, I have a strong ability to learn quickly and a deep curiosity about new things, particularly in technology, security, and programming. With a passion for continuous growth, I work as a freelance Penetration Tester and part-time Bug Bounty Hunter. I enjoy exploring new technologies, tackling complex challenges, and contributing to building a safer digital environment.</p>
                 <p>In my free time, I enjoy listening to music, especially hip-hop. I also like playing games, with FPS titles like Valorant and Apex Legends being my favorites. Additionally, I love watching movies and anime, particularly in genres like mystery, action, psychological, and romance.</p>
@@ -69,32 +66,32 @@
     <section class="testimonials" id="testimonials">
         <h2>Companies that I hacked</h2>
         <div class="row">
-            <div class="pf-card">
+            <div class="pf-card" data-aos="fade-up" data-aos-delay="0" data-aos-duration="2000">
                 <img src="img/testimonials/1.png" alt="Google">
                 <p>"Thank you for the report. We encourage you to continue searching and responsibly disclosing additional vulns in our systems."</p>
                 <h3 class="pf-card-title">- GOOGLE -</h3>
             </div>
-            <div class="pf-card">
+            <div class="pf-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
                 <img src="img/testimonials/2.png" alt="Playstation">
                 <p>"Thank you very much for the report!"</p>
                 <h3 class="pf-card-title">- PLAYSTATION -</h3>
             </div>
-            <div class="pf-card">
+            <div class="pf-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
                 <img src="img/testimonials/3.png" alt="Google">
                 <p>"Thank you for your report, we appreciate them! This is a very interesting find."</p>
                 <h3 class="pf-card-title">- ZAPIER -</h3>
             </div>
-            <div class="pf-card">
+            <div class="pf-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">
                 <img src="img/testimonials/4.png" alt="Google">
                 <p>"Thanks for the info and for bringing this to our attention.. We appreciate your help with the bug!"</p>
                 <h3 class="pf-card-title">- CLOUDCANNON -</h3>
             </div>
-            <div class="pf-card">
+            <div class="pf-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="2000">
                 <img src="img/testimonials/5.png" alt="Google">
                 <p>"Thanks for sharing this vulnerability. We are considering this as a vulnerability in our platform"</p>
                 <h3 class="pf-card-title">- UXCAM -</h3>
             </div>
-            <div class="pf-card">
+            <div class="pf-card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
                 <img src="img/testimonials/6.png" alt="Google">
                 <p>"Thank you for the report and thanks for participating in securing Blibli.com"</p>
                 <h3 class="pf-card-title">- BLIBLI -</h3>
@@ -105,24 +102,24 @@
 
     <!-- Contact Section Start -->
     <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <p>You can send a message here</p>
+        <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">Contact Me</h2>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">You can send a message here</p>
 
         <div class="row">
             <form action="mailto:alvaradian.id@gmail.com" method="POST">
                 <div class="input-group">
                     <i data-feather="user" class="icons"></i>
-                    <input name="name" type="text" placeholder="Name">
+                    <input type="text" placeholder="Name">
                 </div>
                 <div class="input-group">
                     <i data-feather="mail" class="icons"></i>
-                    <input name="email" type="text" placeholder="Email">
+                    <input type="text" placeholder="Email">
                 </div>
                 <div class="input-group">
                     <i data-feather="message-square" class="icons"></i>
-                    <textarea name="message" id="" cols="100" rows="10" placeholder="Your message here"></textarea>
+                    <textarea name="message" id="" cols="100" rows="10" placeholder="Your text here..."></textarea>
                 </div>
-                <button name="submit" type="submit" class="btn">Send a message</button>
+                <button type="submit" class="btn">Send a message</button>
             </form>
         </div>
     </section>
@@ -131,10 +128,10 @@
     <!-- Footer Start -->
     <footer>
         <div class="socials">
-            <a href="https://instagram.com/radian.id_/" target="_blank"><i data-feather="instagram"></i></a>
-            <a href="https://twitter.com/0xAkarii"><i data-feather="twitter"></i></a>
-            <a href="https://www.linkedin.com/in/alva-radian"><i data-feather="linkedin"></i></a>
-            <a href="https://github.com/0xAkarii"><i data-feather="github"></i></a>
+            <a target="_blank" href="https://instagram.com/radian.id_/"><i data-feather="instagram"></i></a>
+            <a target="_blank" href="https://twitter.com/0xAkarii"><i data-feather="twitter"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/alva-radian"><i data-feather="linkedin"></i></a>
+            <a target="_blank" href="https://github.com/0xAkarii"><i data-feather="github"></i></a>
         </div>
         <div class="links">
             <a href="#home">Home</a>
@@ -147,6 +144,23 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        
+        const inputGroup = document.querySelectorAll('.input-group');
+        inputGroup.forEach((input, i) => {
+            input.dataset.aos = 'fade-up';
+            input.dataset.aosOffset = 400;
+            input.dataset.aosDelay = i * 100;
+            input.dataset.aosDuration = 1000;
+        });
+        
+        AOS.init({
+            once: true
+        });
+    </script>
 
     <!-- Typed JS -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

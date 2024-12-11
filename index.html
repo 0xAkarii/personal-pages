@@ -19,10 +19,10 @@
     <nav class="navbar">
         <a href="#" class="navbar-logo">Alva Radian<span>.</span></a>
         <div class="navbar-nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#testimonials">Testimonial</a>
-            <a href="#contact">Contact</a>
+            <a class="nav-links" href="#home">Home</a>
+            <a class="nav-links" href="#about">About</a>
+            <a class="nav-links" href="#testimonials">Testimonial</a>
+            <a class="nav-links" href="#contact">Contact</a>
         </div>
         <div class="navbar-extra">
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
@@ -48,13 +48,18 @@
         <h2>About Me</h2>
         <div class="row">
             <div class="about-img">
-                <img src="img/image.jpg" alt=Profile">
+                <img src="img/profile.jpg" alt=Profile">
             </div>
-            <div class="about-content">
+            <!-- <div class="about-content">
                 <p>Hi, my name is Alva Radian, you can call me Alva or Radian. I love computers since I was a kid. I started learning about cybersecurity in 2019. I learned about penetration testing especially on a website application, and from 2019 - the present I was doing bug bounty and some project penetration testing on website applications. </p>
                 <p>I’m not a professional penetration tester as you think. There are still more that I have to learn about cybersecurity especially penetration testing on Android, iOS, and other application. I love other tech stuff too like programming, networking, etc.</p>
                 <p>My hobbies are listening to music, I like hip-hop music. Sometimes I playing a game, my favorite game is FPS game such as Valorant, Apex Legends, etc. Also I like watching movies and anime. My favorite genre are mystery, action, psychological, romance :D</p>
                 <p>You can find me on the home page, there are links to my social account and also you can contact me by email and let’s be friend :D</p>
+            </div> -->
+            <div class="about-content">
+                <p>Currently pursuing a Bachelor’s degree in Informatics Engineering at Mandiri University, I have a strong ability to learn quickly and a deep curiosity about new things, particularly in technology, security, and programming. With a passion for continuous growth, I work as a freelance Penetration Tester and part-time Bug Bounty Hunter. I enjoy exploring new technologies, tackling complex challenges, and contributing to building a safer digital environment.</p>
+                <p>In my free time, I enjoy listening to music, especially hip-hop. I also like playing games, with FPS titles like Valorant and Apex Legends being my favorites. Additionally, I love watching movies and anime, particularly in genres like mystery, action, psychological, and romance.</p>
+                <p>You can find links to my social accounts on the homepage, or feel free to contact me via email. I look forward to collaborating with you! :D</p>
             </div>
         </div>
     </section>
@@ -62,7 +67,7 @@
 
     <!-- Project Section Start -->
     <section class="testimonials" id="testimonials">
-        <h2>Testimonial</h2>
+        <h2>Companies that I hacked</h2>
         <div class="row">
             <div class="pf-card">
                 <img src="img/testimonials/1.png" alt="Google">
@@ -104,20 +109,20 @@
         <p>You can send a message here</p>
 
         <div class="row">
-            <form action="#">
+            <form action="mailto:alvaradian.id@gmail.com" method="POST">
                 <div class="input-group">
                     <i data-feather="user" class="icons"></i>
-                    <input type="text" placeholder="nama">
+                    <input name="name" type="text" placeholder="Name">
                 </div>
                 <div class="input-group">
                     <i data-feather="mail" class="icons"></i>
-                    <input type="text" placeholder="email">
+                    <input name="email" type="text" placeholder="Email">
                 </div>
                 <div class="input-group">
                     <i data-feather="message-square" class="icons"></i>
-                    <textarea name="message" id="" cols="100" rows="10" placeholder="Your text here..."></textarea>
+                    <textarea name="message" id="" cols="100" rows="10" placeholder="Your message here"></textarea>
                 </div>
-                <button type="submit" class="btn">Send a message</button>
+                <button name="submit" type="submit" class="btn">Send a message</button>
             </form>
         </div>
     </section>
@@ -126,10 +131,10 @@
     <!-- Footer Start -->
     <footer>
         <div class="socials">
-            <a href="#"><i data-feather="instagram"></i></a>
-            <a href="#"><i data-feather="twitter"></i></a>
-            <a href="#"><i data-feather="facebook"></i></a>
-            <a href="#"><i data-feather="github"></i></a>
+            <a href="https://instagram.com/radian.id_/" target="_blank"><i data-feather="instagram"></i></a>
+            <a href="https://twitter.com/0xAkarii"><i data-feather="twitter"></i></a>
+            <a href="https://www.linkedin.com/in/alva-radian"><i data-feather="linkedin"></i></a>
+            <a href="https://github.com/0xAkarii"><i data-feather="github"></i></a>
         </div>
         <div class="links">
             <a href="#home">Home</a>
@@ -148,7 +153,7 @@
 
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developer.', 'Pentester.'],
+          strings: ['Penetration Tester.', 'Cybersecurity Enthusiast.'],
           typeSpeed: 50,
           loop: true,
         });
